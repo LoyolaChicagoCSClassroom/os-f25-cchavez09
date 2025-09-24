@@ -12,14 +12,23 @@ uint8_t inb (uint16_t _port) {
 }
 
 void main() {
-    unsigned short *vram = (unsigned short*)0xb8000; // Base address of video mem
-    const unsigned char color = 7; // gray text on black background
+    
+    char *vram = (char*)0xB8000;
 
-    while(1) {
-        uint8_t status = inb(0x64);
+    int x = 0;
 
-        if(status & 1) {
-            uint8_t scancode = inb(0x60);
-        }
-    }
+    vram[x] = 'a';
+    
+
+    while(1);
+
 }
+
+void putc(int data) {
+    
+
+
+
+
+}
+
