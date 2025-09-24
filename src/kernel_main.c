@@ -28,7 +28,5 @@ void putc(int data) {
     
 
 
-
-
 }
 
